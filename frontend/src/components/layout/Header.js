@@ -9,26 +9,25 @@ const Header = () => {
 
     return (
         <>
-            <Navbar bg="light" expand="lg">
+            <Navbar expand="lg">
                 <Container>
-                <Navbar.Brand href="#home">
-                            <img
-                                src="logo513.png"
-                                width="100"
-                                height=""
-                                className=""
-                                alt="error"
-                            /> RCPD Fabrication Co.
-                </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/products">Products</Nav.Link>
-                            <Nav.Link href="/about">About</Nav.Link>
-                            <Nav.Link href="/services">Services</Nav.Link>
-                            <Nav.Link href="/contacts">Contacts</Nav.Link>
-                            <Nav.Link href="/faqs">FAQs</Nav.Link>
+                        <Nav className="navigation">
+                            <Nav.Link href="/" className="navlink">Home</Nav.Link>
+                            <Nav.Link href="/about" className="navlink">About</Nav.Link>
+                            <Nav.Link href="/products" className="navlink">Products</Nav.Link>
+                            <Navbar.Brand href="#home" className ="logo">
+                            <img
+                                src="rcpdlogo4.png"
+                                width="200"
+                                className=""
+                                alt="error"
+                            />
+                            </Navbar.Brand>
+                            <Nav.Link href="/services" className="navlink">Services</Nav.Link>
+                            <Nav.Link href="/contacts" className="navlink">Contacts</Nav.Link>
+                            <Nav.Link href="/faqs" className="navlink">FAQs</Nav.Link>
                     
                             {user ? <>  {/* checking if user is logged in */}
                                 {/* if user is logged in, display the dropdown title as the username */}
@@ -69,12 +68,15 @@ const Header = () => {
                                         </NavDropdown>
                                     </>}
                             </> : <> {/** else, user is NOT logged in, display the login button */}
-                                <Nav.Link href='/login'>Login</Nav.Link>
+                                {/* <Nav.Link href='/login'>Login</Nav.Link> */}
                             </>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <div id="divider">
+                <hr class="solid"></hr>
+            </div>
         </>
     )
 }
