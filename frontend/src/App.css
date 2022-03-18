@@ -61,6 +61,14 @@
   font-size: 70px;
 }
 
+#title {
+  /* background-color: aqua; */
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 100px;
+}
+
 #mainimg {
   /* background-color: rebeccapurple; */
   text-align: center;
@@ -74,6 +82,20 @@
 #sec2 {
   margin: auto;
   padding-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contBox {
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap;
+  justify-content: right;
 }
 
 hr.solid {
@@ -94,3 +116,26 @@ hr.solid {
 .aboutimg {
   margin: auto;
 }
+
+#about {
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align:justify;
+}
+
+#company {
+  margin-left: 20%;
+  font-size: 70px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
