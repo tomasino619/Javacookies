@@ -55,14 +55,21 @@
   padding-bottom: 40px;
 }
 
+#divider-foot
+{
+  width: 40vw;
+  margin: auto;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
 #tagline {
-  /* background-color: aqua; */
   text-align: center;
   font-size: 70px;
+  border: groove;
 }
 
 #title {
-  /* background-color: aqua; */
   text-align: center;
   font-style: italic;
   font-weight: bold;
@@ -70,7 +77,6 @@
 }
 
 #mainimg {
-  /* background-color: rebeccapurple; */
   text-align: center;
   font-size: 70px;
 }
@@ -139,3 +145,88 @@ hr.solid {
 .flex-child:first-child {
   margin-right: 20px;
 } 
+
+#divider-foot{
+  padding: 0;
+}
+
+#footerRow1Col2-1{
+  margin: auto;
+  width: 500px;
+  text-align: center;
+}
+
+#footerRow1Col2-2{
+  margin: auto;
+  width: 800px;
+  text-align: center;
+}
+
+#footrow2{
+  margin: auto;
+  width: 150px;
+}
+
+#facebook{
+  width: 21px;
+  height: 20px;
+}
+
+#facebook:hover{
+  background-color: lightgray;
+  width: 21px;
+  height: 20px;
+}
+
+#email{
+  width: 21px;
+  height: 20px;
+}
+
+#email:hover{
+  background-color: lightgray;
+  width: 21px;
+  height: 20px;
+}
+
+#phone{
+  width: 21px;
+  height: 20px;
+}
+
+#phone:hover{
+  background-color: lightgray;
+  width: 21px;
+  height: 20px;
+}
+
+#footerRow2Col1{
+  margin: auto;
+  text-align: right;
+}
+
+#footerRow2Col2{
+  margin: auto;
+  text-align: center;
+}
+
+#footerRow2Col3{
+  margin: auto;
+  text-align: left;
+}
+
+#vb{
+  background-color: black;
+}
+
+#vb:hover{
+  background-color: orangered;
+}
+
+#vb2{
+  background-color: black;
+}
+
+#vb2:hover{
+  background-color: orangered;
+}
