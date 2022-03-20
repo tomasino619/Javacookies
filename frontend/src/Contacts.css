@@ -1,0 +1,25 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.topic{
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text-one{
+  text-indent: 50px;
+}
+
+.text-two{
+  text-indent: 50px;
+}
+

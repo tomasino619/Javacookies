@@ -4,6 +4,7 @@ import { useAlert } from 'react-alert'
 import { Link } from 'react-router-dom'
 import { servicesApi } from '../api/servicesApi'
 import { categoryActions } from '../../actions'
+import Footer from '../layout/Footer'
 
 const Services = () => {
     const [services, setServices] = useState([])
@@ -56,6 +57,7 @@ const Services = () => {
                     </div >
                 </>
             )}
+            <Footer/>
         </>
     )
 }

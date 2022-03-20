@@ -4,6 +4,7 @@ import { useAlert } from 'react-alert'
 import { Link } from 'react-router-dom'
 import { productsApi } from '../api/productsApi'
 import { categoryActions  } from '../../actions'
+import Footer from '../layout/Footer'
 
 const Products = () => {
     const [products, setProducts] = useState([])
@@ -59,6 +60,7 @@ const Products = () => {
                     </div >
                 </>
             )}
+            <Footer/>
         </>
     )
 }
