@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { servicesApi } from '../api/servicesApi'
 import { categoryActions } from '../../actions'
 import Footer from '../layout/Footer'
+import { product } from 'prelude-ls'
 
 const Services = () => {
     const [services, setServices] = useState([])
@@ -43,7 +44,7 @@ const Services = () => {
                         {
                             services.length > 0 ? services.map(service => (
                                 <div className='card' key={service._id}>
-                                    <img src={service?.images[0].path ? service.images[0].path : ''} className="img-fluid" />
+                                    {service.images && <img src={service?.images[0].path ? service.images[0].path : ''} className="img-fluid" />}
                                     <p>{service.name}</p>
                                     <p>{service.category}</p>
                                     <p>{service.price}</p>

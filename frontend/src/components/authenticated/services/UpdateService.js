@@ -79,12 +79,12 @@ const UpdateService = () => {
             <Form  onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="Name" value={service.name} onChange={(e) => setService({...service, name: e.target.value}) } />
+                    <Form.Control type="text" placeholder="Name" value={service.name} onChange={(e) => setService({...service, name: e.target.value})} required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Category</Form.Label>
-                    <Form.Select value={service.category} onChange={(e) => setService({ ...service, category: e.target.value })}>
+                    <Form.Select value={service.category} onChange={(e) => setService({ ...service, category: e.target.value })} required>
                         {categoryList && categoryList.map(category => (
                             <option value={category.name}>{category.name}</option>
                         ))}
@@ -93,12 +93,12 @@ const UpdateService = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
-                    <Form.Control type="number" placeholder="Price" value={service.price} onChange={(e) => setService({...service, price: e.target.value})} />
+                    <Form.Control type="number" placeholder="Price" value={service.price} onChange={(e) => setService({...service, price: e.target.value})} required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Category</Form.Label>
-                    <Form.Control type="text" placeholder="Category" value={service.category} onChange={(e) => setService({...service, category: e.target.value})} />
+                    <Form.Control type="text" placeholder="Category" value={service.category} onChange={(e) => setService({...service, category: e.target.value})} required />
                 </Form.Group>
 
                 <Form.Group controlId="formFileMultiple" className="mb-3">

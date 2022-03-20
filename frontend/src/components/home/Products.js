@@ -44,7 +44,7 @@ const Products = () => {
                             products.length > 0 ? products.map(product => (
                                 <>
                                     <div className='card' key={product._id}>
-                                        <img src={product?.images[0].path ? product.images[0].path : ''} className="img-fluid" />
+                                        {product.images && <img src={product?.images[0].path ? product.images[0].path : ''} className="img-fluid" />}
                                         <p>{product.name}</p>
                                         <p>{product.category}</p>
                                         <p>{product.price}</p>

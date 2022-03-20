@@ -48,6 +48,121 @@ const Contacts = () => {
           </div>
           </div>
         </div>
+
+        <div class="container" id='faqs-part'>
+          <div class="faqs-title">Frequently Asked Questions</div>
+            <div class="card-deck">
+              <div class="row" id='faq-deck'>
+               <div class="col-sm">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>               
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="col-sm">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>               
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="col-sm">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>               
+                    </div>
+                  </div>
+                </div> 
+
+                <div class="col-sm">
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>                
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Questions</h5>
+                      <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                                          let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>               
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>     
+        </div>
       </body>
       <Footer/>
     </Fragment>
@@ -55,3 +170,58 @@ const Contacts = () => {
 }
 
 export default Contacts
+
+{/* <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Questions</h5>
+                <p class="card-text">damn lolz</p>
+                
+              </div>
+            </div>
+
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Questions</h5>
+                <p class="card-text">damn .</p>
+               
+              </div>
+            </div>
+            
+           
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Questions</h5>
+                <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                
+              </div>
+              </div>
+
+              <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Questions</h5>
+                <p class="card-text">damn .</p>              
+              </div>
+            </div>
+            <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Questions</h5>
+                <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                
+              </div>
+              </div>
+              <div class="card">
+              
+              <div class="card-body">
+                <h5 class="card-title">Questions</h5>
+                <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
+                let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                
+              </div>
+              </div> */}

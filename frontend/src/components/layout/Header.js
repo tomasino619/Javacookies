@@ -26,7 +26,7 @@ const Header = () => {
                             </Navbar.Brand>
                             <Nav.Link href="/services" className="navlink">Services</Nav.Link>
                             <Nav.Link href="/contacts" className="navlink">Contacts</Nav.Link>
-                            <Nav.Link href="/faqs" className="navlink">FAQs</Nav.Link>
+                            <Nav.Link href="/contacts/#faqs-part" className="navlink">FAQs</Nav.Link>
                     
                             {user ? <>  {/* checking if user is logged in */}
                                 {/* if user is logged in, display the dropdown title as the username */}

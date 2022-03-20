@@ -65,12 +65,12 @@ const CreateProduct = () => {
             <Form onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="Name" value={product.name} onChange={(e) => setProduct({ ...product, name: e.target.value })} />
+                    <Form.Control type="text" placeholder="Name" value={product.name} onChange={(e) => setProduct({ ...product, name: e.target.value })} required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Category</Form.Label>
-                    <Form.Select value={product.category} onChange={(e) => setProduct({ ...product, category: e.target.value })}>
+                    <Form.Select value={product.category} onChange={(e) => setProduct({ ...product, category: e.target.value })} required>
                         <option selected>-</option>
                         {categoryList && categoryList.map(category => (
                             category?.type !== 'Service' && <option value={category.name}>{category.name}</option>
@@ -80,12 +80,12 @@ const CreateProduct = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
-                    <Form.Control type="number" placeholder="Price" value={product.price} onChange={(e) => setProduct({ ...product, price: e.target.value })} />
+                    <Form.Control type="number" placeholder="Price" value={product.price} onChange={(e) => setProduct({ ...product, price: e.target.value })} required />
                 </Form.Group>
 
                 <Form.Group controlId="formFileMultiple" className="mb-3">
                     <Form.Label>Multiple files input example</Form.Label>
-                    <Form.Control type="file" multiple onChange={(e) => setImages(Array.from(e.target.files))} />
+                    <Form.Control type="file" multiple onChange={(e) => setImages(Array.from(e.target.files))} required />
                 </Form.Group>
 
                 <Button variant="primary" type="submit">

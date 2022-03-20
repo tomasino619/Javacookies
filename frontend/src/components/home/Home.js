@@ -72,6 +72,10 @@ const Home = () => {
                         />
                     </div>
                 </div>
+                
+                <div id="divider-about">
+                    <hr class="solid"></hr>
+                </div>
 
                 <div class="col-sm" id='title'>
                     ABOUT US

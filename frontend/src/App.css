@@ -63,6 +63,14 @@
   padding-bottom: 40px;
 }
 
+#divider-about
+{
+  width: 55vw;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
 #tagline {
   text-align: center;
   font-weight: bold;
