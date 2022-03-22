@@ -15,7 +15,7 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="navigation">
                             <Nav.Link href="/" className="navlink">Home</Nav.Link>
-                            <Nav.Link href="/#title" className="navlink">About</Nav.Link>
+                            <Nav.Link href="/#about-us" className="navlink">About</Nav.Link>
                             <Nav.Link href="/products" className="navlink">Products</Nav.Link>
                             <Navbar.Brand href="/" className ="logo">
                             <img

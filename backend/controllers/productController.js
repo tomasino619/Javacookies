@@ -7,12 +7,12 @@ const cloudinary = require('cloudinary').v2
 
 // routes [controller functions]
 exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
-    const resPerPage = 5
+    // const resPerPage = 5
 
     const apiFeatures = new APIFeatures(Product.find(), req.query)
         .search()
         .filter()
-        .pagination(resPerPage)
+        // .pagination(resPerPage)
 
     const products = await apiFeatures.query
 

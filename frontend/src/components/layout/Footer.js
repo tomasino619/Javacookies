@@ -17,7 +17,7 @@ const Footer = () => {
                     <div class="col-sm">
                         <div class="col-sm" id="footerRow1Col2-1">
                             <img
-                                src="rcpdlogo.png"
+                                src="https://res.cloudinary.com/javacookies/image/upload/v1647930821/rcdp_logo_bzfwhy.png"
                                 width="80"
                                 height="80"
                                 alt="placeholder"
@@ -42,19 +42,19 @@ const Footer = () => {
 
                     <div class="col-sm" id="footerRow2Col1" >
                         <a href='https://www.facebook.com/rcpdfab' target="_blank">
-                            <img src="facebook.png"  alt='facebook' id='facebook'></img>
+                            <img src="https://res.cloudinary.com/javacookies/image/upload/v1647930749/facebook_pqeufi.png"  alt='facebook' id='facebook'></img>
                         </a>
                     </div>
 
                     <div class="col-sm" id="footerRow2Col2">
                         <a href='https://gmail.com/' target="_blank">
-                            <img src="email.png"  alt='email' id='email'></img>
+                            <img src="https://res.cloudinary.com/javacookies/image/upload/v1647930749/email_jfyqep.png"  alt='email' id='email'></img>
                         </a>
                     </div>
 
                     <div class="col-sm" id="footerRow2Col3">
                         <a href='https://www.facebook.com/rcpdfab' target="_blank">
-                            <img src="phone.png"  alt='phone' id='phone'></img>
+                            <img src="https://res.cloudinary.com/javacookies/image/upload/v1647930749/phone_gnr3lm.png"  alt='phone' id='phone'></img>
                         </a>
                     </div>
                 </div>

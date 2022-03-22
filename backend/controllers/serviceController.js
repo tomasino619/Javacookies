@@ -6,7 +6,7 @@ const APIFeatures = require('../utils/apiFeatures')
 const cloudinary = require('cloudinary').v2
 
 exports.getAllServices = catchAsyncErrors(async (req, res, next) => {
-    const resPerPage = 5
+    // const resPerPage = 5
     const serviceCount = await Service.countDocuments()
 
     const apiFeatures = new APIFeatures(Service.find(), req.query)

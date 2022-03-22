@@ -31,36 +31,54 @@ const Products = () => {
 
     return (
         <>
-            {loading ? <h1>Loading ... </h1> : (
-                <>
-                    <select name="category" onChange={e => setCategory(e.target.value)}>
-                        <option value="">-</option>
-                        {categories && categories.map(cat => ( 
-                            cat.type !== 'Service' && <option value={cat.name} selected={category === cat.name ? true : false }>{cat.name}</option>
-                        ))}
-                    </select>
-                    <div className='card-container'>
-                        {
-                            products.length > 0 ? products.map(product => (
-                                <>
-                                    <div className='card' key={product._id}>
-                                        {product.images && <img src={product?.images[0].path ? product.images[0].path : ''} className="img-fluid" />}
-                                        <p>{product.name}</p>
-                                        <p>{product.category}</p>
-                                        <p>{product.price}</p>
-                                        <Link to={`/products/${product._id}`}>
-                                            <button>View</button>
-                                        </Link>
+            <div className='product-col-container'>
+                {loading ? <h1>Loading ... </h1> : (
+                    <>
+                        <div class="row" id="aboutheader">
+                            <h1>Products</h1>
+                        </div>
 
-                                    </div>
-                                </>
-                            ))
-                                : <>No Products</>
-                        }
-                    </div >
-                </>
-            )}
-            <Footer/>
+                        <select name="category" id='category' onChange={e => setCategory(e.target.value)}>
+                            <option value="">All Products</option>
+                            {categories && categories.map(cat => ( 
+                                cat.type !== 'Service' && <option value={cat.name} selected={category === cat.name ? true : false }>{cat.name}</option>
+                            ))}
+                        </select>
+            
+                        <div id="product-area">
+                            <div className='card-container'>
+                                {
+                                    products.length > 0 ? products.map(product => (
+                                        <>
+                                            <div class='row' id='product-card'>   
+                                                <div className='card' key={product._id}>
+                                                    <div id='photo-container'>
+                                                        {product.images && <img src={product?.images[0].path ? product.images[0].path : ''} className="img-fluid-showcase" />}
+                                                    </div>
+                                                    <p>{product.name}</p>
+                                                    <div id="divider-content">
+                                                        <hr class="solid"></hr>
+                                                    </div>
+                                                    <p>{product.category}</p>
+                                                    <p>₱{product.price}</p>
+                                                    <div id='button-container'>
+                                                        <Link to={`/products/${product._id}`}>
+                                                            <button>View</button>
+                                                        </Link>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </>
+                                    ))
+                                        : <h1 className='aboutimg'>No Products Available</h1>
+                                }
+                            </div >
+                        </div>
+                    </>
+                )}
+                <Footer/>
+                    
+            </div>
         </>
     )
 }
