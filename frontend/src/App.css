@@ -40,6 +40,7 @@
 .navlink {
   margin: auto;
   width: auto;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -280,4 +281,58 @@ hr.solid {
 
 #divider-content{
   width: 100px;
+}
+
+#mrgn{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#product-info{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+}
+
+#desc-limiter{
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 13ch;
+}
+
+#photo-col{
+  width: 800px;
+  height: 500px;
+  margin: auto;
+}
+
+#photo-limit{
+  width: 790px;
+  height: 490px;
+  margin: 10px;
+  border: solid;
+  padding: 0%;
+}
+
+#text-col{
+  margin-top: 10px;
+  margin-left: 200px;
+  text-align: center;
+}
+
+#fixed-text{
+  height: 500px;
+  width: 500px;
+  border: solid;
+  position: fixed;
+  margin: auto;
+  text-align: center;
+}
+
+#fixed-text{
+  padding-top: 100px;
+  margin: auto;
+  text-align: center;
 }

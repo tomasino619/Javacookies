@@ -20,11 +20,32 @@ const ProductDetails = () => {
     }, [])
 
     return (
-        <div>
-            {product.images && product.images.map(image => <img src={image.path ? image.path : ''} className="img-fluid" /> )}
-            {product.name}
-            {product.category}
-            {product.price}
+        <div class='row' id='product-info'>
+                <div id="photo-col">
+                    {product.images && product.images.map(image => <img src={image.path ? image.path : ''} className="img-fluid" id="photo-limit"/> )}
+                </div>
+
+                <div class="col-sm" id="text-col">
+                    <div id="fixed-text">
+                        <div id="fixed-text-cont">
+                            <div>
+                                {product.name}
+                            </div>
+
+                            <div>
+                                {product.category}
+                            </div>
+
+                            <div>
+                            <p>₱{product.price}</p>
+                            </div>
+
+                            <div>
+                                {product.description}
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     )
 }

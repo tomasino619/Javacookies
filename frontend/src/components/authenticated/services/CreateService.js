@@ -61,7 +61,7 @@ const CreateService = () => {
     return (
         categoryList ?
         <Fragment>
-            <Form  onSubmit={submitHandler}>
+            <Form  id='mrgn' onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" placeholder="Name" value={service.name} onChange={(e) => setService({...service, name: e.target.value}) } required />
@@ -80,6 +80,11 @@ const CreateService = () => {
                              category?.type !== 'Product' && <option value={category.name}>{category.name}</option>
                         ))}
                     </Form.Select>
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Description</Form.Label>
+                    <Form.Control type="text" placeholder="Description" value={service.description} onChange={(e) => setService({ ...service, description: e.target.value })} required />
                 </Form.Group>
 
                 <Form.Group controlId="formFileMultiple" className="mb-3">

@@ -60,6 +60,7 @@ const Products = () => {
                                                         <hr class="solid"></hr>
                                                     </div>
                                                     <p>{product.category}</p>
+                                                    <p id='desc-limiter'>{product.description}</p>
                                                     <p>₱{product.price}</p>
                                                     <div id='button-container'>
                                                         <Link to={`/products/${product._id}`}>

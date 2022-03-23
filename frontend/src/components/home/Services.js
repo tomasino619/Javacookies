@@ -62,9 +62,12 @@ const Services = () => {
                                                     </div>
                                                     <p>{service.category}</p>
                                                     <p>{service.price}</p>
-                                                    <Link to={`/services/${service._id}`}>
-                                                        <button>View</button>
-                                                    </Link>
+                                                    <p id='desc-limiter'>{service.description}</p>
+                                                    <div id='button-container'>
+                                                        <Link to={`/services/${service._id}`}>
+                                                            <button>View</button>
+                                                        </Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </>

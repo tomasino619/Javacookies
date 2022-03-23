@@ -47,6 +47,7 @@ const ListServices = () => {
                                 <th>Name</th>
                                 <th>Category</th>
                                 <th>Price</th>
+                                <th>Description</th>
                                 <th>Actions</th>
                             </thead>
                             <tbody>
@@ -59,6 +60,7 @@ const ListServices = () => {
                                         <td>{service.name}</td>
                                         <td>{service.category}</td>
                                         <td>{service.price}</td>
+                                        <td id='desc-limiter'>{service.description}</td>
                                         <td>
                                             <Link to={`/services/${service._id}`}>
                                                 <button>View</button>
