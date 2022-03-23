@@ -12,6 +12,12 @@ const serviceSchema = new mongoose.Schema({
         required: [true, 'Please enter product name'],
         maxLength: [100, '100 characters only']
     },
+    description: {
+        type: String,
+        required: [true, 'Please enter description'],
+        trim: true,
+        maxLength: [500, '500 characters only']
+    },
     images: {
         type: Array,
         required: [true, 'Please enter product image'],

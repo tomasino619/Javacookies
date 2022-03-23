@@ -62,8 +62,8 @@ const CreateProduct = () => {
     return (
         categoryList ?
         <Fragment>
-            <Form onSubmit={submitHandler}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form id='mrgn' onSubmit={submitHandler}>
+                <Form.Group className="mb-3" controlId="formBasicEmail"> 
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" placeholder="Name" value={product.name} onChange={(e) => setProduct({ ...product, name: e.target.value })} required />
                 </Form.Group>
@@ -82,6 +82,11 @@ const CreateProduct = () => {
                     <Form.Label>Price</Form.Label>
                     <Form.Control type="number" placeholder="Price" value={product.price} onChange={(e) => setProduct({ ...product, price: e.target.value })} required />
                 </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Description</Form.Label>
+                    <Form.Control type="text" placeholder="Description" value={product.description} onChange={(e) => setProduct({ ...product, description: e.target.value })} required />
+                </Form.Group>                
 
                 <Form.Group controlId="formFileMultiple" className="mb-3">
                     <Form.Label>Multiple files input example</Form.Label>

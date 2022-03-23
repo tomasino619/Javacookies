@@ -21,11 +21,32 @@ const ServiceDetails = () => {
     }, [])
 
     return (
-        <div>
-        {service.images && service.images.map(image => <img src={image.path ? image.path : ''} className="img-fluid" /> )}
-            {service.name}
-            {service.category}
-            {service.price}
+        <div class='row' id='product-info'>
+                <div id="photo-col">
+                    {service.images && service.images.map(image => <img src={image.path ? image.path : ''} className="img-fluid" id="photo-limit" /> )}
+                </div>
+
+                <div class="col-sm" id="text-col">
+                    <div id="fixed-text">
+                        <div id="fixed-text-cont">
+                            <div>
+                                {service.name}
+                            </div>
+
+                            <div>
+                                {service.category}
+                            </div>
+
+                            <div>
+                                {service.price}
+                            </div>
+
+                            <div>
+                                {service.description}
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     )
 }

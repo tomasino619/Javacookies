@@ -45,6 +45,7 @@ const ListProducts = () => {
                                 <th>Name</th>
                                 <th>Category</th>
                                 <th>Price</th>
+                                <th>Description</th>
                                 <th>Actions</th>
                             </thead>
                             <tbody>
@@ -57,6 +58,7 @@ const ListProducts = () => {
                                         <td>{product.name}</td>
                                         <td>{product.category}</td>
                                         <td>{product.price}</td>
+                                        <td id='desc-limiter'>{product.description}</td>
                                         <td>
                                             <Link to={`/products/${product._id}`}>
                                                 <button>View</button>
