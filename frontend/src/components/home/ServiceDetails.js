@@ -38,7 +38,7 @@ const ServiceDetails = () => {
                             </div>
 
                             <div>
-                            <p>₱{service.price}</p>
+                                {service.price}
                             </div>
 
                             <div>
