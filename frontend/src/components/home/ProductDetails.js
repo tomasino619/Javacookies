@@ -37,7 +37,7 @@ const ProductDetails = () => {
                             </div>
 
                             <div>
-                                {product.price}
+                                <p>₱{product.price}</p>
                             </div>
 
                             <div>
