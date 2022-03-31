@@ -35,7 +35,7 @@ const Home = () => {
                 </div>
 
                 <div class="row" id="aboutheader">
-                    <h1>SPECIALIZES IN STEELWORKS</h1>
+                    <h1>SPECIALIZES IN MACHINE AUTOMATION AND STEELWORKS</h1>
                 </div>
 
                 <div class="row" id="sec1">

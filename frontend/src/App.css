@@ -5,13 +5,15 @@
 }
 .card{
   flex: auto;
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 300px;
+  max-width: 300px;
   border: .5px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-right: 16px;
+  margin-left:  5px;
 }
 
 .col-container{
@@ -258,10 +260,10 @@ hr.solid {
 }
 
 #photo-container{
-  margin-top: 20px;
-  margin-bottom: 13px;
-  height: 200px;
-  width: 200px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  height: 250px;
+  width: 250px;
 }
 
 #product-area {
@@ -272,7 +274,7 @@ hr.solid {
 
 .img-fluid-showcase{
   height: 200px;
-  width: 200px;
+  width: 250px;
 }
 
 #button-container{
