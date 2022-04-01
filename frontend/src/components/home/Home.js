@@ -1,7 +1,6 @@
 import React from 'react'
 import Metadata from "../layout/Metadata"
 import Footer from '../layout/Footer'
-import { Link } from 'react-router-dom'
 import '../../../src/App.css'
 const Home = () => {
     return (
