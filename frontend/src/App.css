@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -102,7 +104,7 @@ hr.solid {
 }
 
 #aboutheader {
-  margin-left: 15%;
+  margin-left: 24%;
   padding-top: 30px;
 }
 
@@ -209,7 +211,7 @@ hr.solid {
 }
 
 #vb {
-  background-color: black;
+  
 }
 
 #vb:hover {
@@ -217,7 +219,7 @@ hr.solid {
 }
 
 #vb2 {
-  background-color: black;
+
 }
 
 #vb2:hover {
@@ -318,4 +320,51 @@ hr.solid {
   padding-top: 100px;
   margin     : auto;
   text-align : center;
+}
+
+.sectionAbout{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main_heading{
+  color: rgb(255, 49, 49);
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+}
+.underline{
+  height: 04px;
+  width: 4rem;
+  background-color: #f7c62f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.containerAbout{
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.containerMV{
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.vision_header{
+  font-weight: bolder;
+}
+.mission_header{
+  font-weight: bolder;
+}
+.core_header{
+  font-weight: bolder;
+}
+.bg-c-light{
+  background-color: #f2f2f2;
 }

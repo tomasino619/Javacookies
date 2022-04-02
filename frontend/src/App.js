@@ -39,6 +39,7 @@ import CreateCategory from './components/authenticated/categories/CreateCategory
 import ProductDetails from './components/home/ProductDetails';
 import ServiceDetails from './components/home/ServiceDetails';
 import Contacts from './components/home/Contacts';
+import About from './components/home/About';
 
 const ScrollToTop = ({ children }) => {
     const location = useLocation();
@@ -74,6 +75,7 @@ function App() {
                             <Route path='/products' element={<Products />} />
                             <Route path='/products/:id' element={<ProductDetails />} />
                             <Route path='/contacts' element={<Contacts />} />
+                            <Route path='/about' element={<About />} />
 
                             {/* 
                                 AuthenticatedRoute is a customized route that requires user to be logged in

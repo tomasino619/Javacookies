@@ -5,7 +5,7 @@ import './Header.css';
 
 import { useSelector } from 'react-redux'
 import LogoutButton from "../layout/LogoutButton"
-import { NavDropdown } from 'react-bootstrap'
+import { NavDropdown, Nav } from 'react-bootstrap'
 
 
 
@@ -42,12 +42,12 @@ function Header() {
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <ul className={click ? 'nav-menu active' : 'nav-menu'} id="ul_header">
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Home
                             </Link>
-                            <Link to='/#about-us' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                                 About
                             </Link>
                             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
@@ -62,7 +62,6 @@ function Header() {
                             {/* <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Login
                             </Link> */}
-
                         </li>
                     </ul>
 
