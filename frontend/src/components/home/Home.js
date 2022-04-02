@@ -8,68 +8,40 @@ const Home = () => {
         <div className='col-container'>
             <Metadata title={"Home"} />
 
-            <div class="row" id="sec1">
-                <div class="col-sm" id='tagline'>
-                    RCPD Tagline Here
-                    <div class="row">
-                        <div class="col">
-                            <a href='/products'>
-                                <button type="button" class="btn btn-warning" id='vb'>View Products</button>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href='/services'>
-                                <button type="button" class="btn btn-warning" id='vb2'>View Services</button>
-                            </a>
+            <div className='sampleCon'>
+                <div className='centerText'>
+                    <div class="row" id="sec1">
+                        <div class="col-sm" id='tagline'>
+                            <div id='customText'>
+                                RCPD Trading and Fabrication
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                </div>
+                                <div class="col">
+                                    <a href='/products'>
+                                        <button type="button" class="btn btn-warning" id='vb'>View Products</button>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href='/services'>
+                                        <button type="button" class="btn btn-warning" id='vb'>View Services</button>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm" id="mainimg">
-                    <img
-                        src="/images/placeholder1.jpeg"
-                        width="500"
-                        className=""
-                        alt="placeholder"
-                    />
-                </div>
             </div>
 
-            <div class="row" id="aboutheader">
-                <h1>SPECIALIZES IN MACHINE AUTOMATION AND STEELWORKS</h1>
-            </div>
-
-            <div class="row" id="sec1">
-                <div class="col-sm" id="p1">
-                    <img
-                        src="/images/placeholder1.jpeg"
-                        width="350"
-                        class="aboutimg"
-                        alt="placeholder"
-                    />
-
-                </div>
-                <div class="col-sm" id="p2">
-                    <img
-                        src="/images/placeholder1.jpeg"
-                        width="350"
-                        class="aboutimg"
-                        alt="placeholder"
-                    />
-                </div>
-                <div class="col-sm" id="p3">
-                    <img
-                        src="/images/placeholder1.jpeg"
-                        width="350"
-                        class="aboutimg"
-                        alt="placeholder"
-                    />
-                </div>
-            </div>
+            
             <section className="sectionAbout" id="aboutus">
                 <div className="containerAbout">
                     <div class="row">
                         <div class="col-md-12 text-center"></div>
-                        <h3 className="main_heading"> COMPANY PROFILE</h3>
+                        <h3 className="main_heading" id="companyProfile"> COMPANY PROFILE</h3>
                         <div className="underline mx-auto"></div>
                         <p className="aboutParagraph1">
                             RCPD Trading and Fabrications is a growing industrial engineering company.

@@ -6,7 +6,7 @@ import history from './About';
 const About = () => {
   return (
     <div>
-      <section className="sectionAbout" id="aboutus">
+      <section className="sectionAbout">
         <div className="containerAbout">
           <div class="row">
             <div class="col-md-12 text-center"></div>
@@ -47,8 +47,10 @@ const About = () => {
             <div className="col-md-4">
               <h6 className="core_header">Our Core Values</h6>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                </br>
+                Lorem Ipsum has been the industry's standard dummy text ever <br>
+                </br>since the 1500s, when an unknown
               </p>
             </div>
           </div>
@@ -56,8 +58,10 @@ const About = () => {
       </section>
 
       <div class="container" id='faqs-part'>
-        <div class="faqs-title">Frequently Asked Questions</div>
-        <div class="card-deck">
+        <div class="main_heading">Frequently Asked Questions</div>
+        <div className="underline mx-auto"></div>
+        <div className="card-deck">
+          <div class='faq-space'></div>
           <div class="row" id='faq-deck'>
             <div class="col-sm">
 
@@ -140,32 +144,7 @@ const About = () => {
               </div>
             </div>
 
-            <div class="col-sm">
 
-              <div class="faqcard">
-                <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
-                </div>
-              </div>
-
-              <div class="faqcard">
-                <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
-                </div>
-              </div>
-
-              <div class="faqcard">
-                <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

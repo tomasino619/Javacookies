@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   box-sizing: border-box;
@@ -39,13 +40,19 @@
   font-size  : 70px;
 }
 
-#about-us {
-  text-align : center;
-  font-style : italic;
-  font-weight: bold;
-  font-size  : 100px;
+#customText{
+  font-family: 'Bebas Neue';
+  letter-spacing: 4px;
+  font-size: 150px;
+  margin: auto;
+  background: rgba(46, 46, 46, 0.6); 
+  color: #fff;
+  width:max-content;
 }
 
+#aboutus {
+  padding: 200px;
+}
 #mainimg {
   text-align: center;
   font-size : 70px;
@@ -80,6 +87,7 @@
 }
 
 .col-container {
+  text-align: center;
   display       : flex;
   flex-direction: column;
 }
@@ -211,6 +219,8 @@ hr.solid {
 }
 
 #vb {
+  font-size: 30px;
+  border-radius: 20px;
   
 }
 
@@ -268,6 +278,10 @@ hr.solid {
   width: 100px;
 }
 
+#companyProfile{
+  font-size: 75px;
+}
+
 #mrgn {
   margin-left : 20%;
   margin-right: 20%;
@@ -323,18 +337,20 @@ hr.solid {
 }
 
 .sectionAbout{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
+
 .main_heading{
   color: rgb(255, 49, 49);
-  font-size: 50px;
+  font-size: 55px;
   text-align: center;
   font-weight: bolder;
+  padding: 0%;
 }
 .underline{
   height: 04px;
-  width: 4rem;
+  width: 20rem;
   background-color: #f7c62f;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -344,16 +360,13 @@ hr.solid {
   align-items: center;
   text-align: center;
   margin: auto;
-  padding-bottom: 100px;
-  padding-top: 100px;
+
 }
 
 .containerMV{
   align-items: center;
   text-align: center;
   margin: auto;
-  padding-bottom: 100px;
-  padding-top: 100px;
 }
 
 .vision_header{
@@ -367,4 +380,27 @@ hr.solid {
 }
 .bg-c-light{
   background-color: #f2f2f2;
+}
+
+.centerText{
+  position: relative;
+  top: 25%;
+}
+
+.sampleCon{
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background: url("../public/images/placeholder1.jpeg");
+  background-size: 2000px;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  width: 100%;
+  height: 1000px;
+  margin: auto;
+}
+
+.aboutParagraph1{
+  font-size: 20px;
+  padding: 0%;
 }

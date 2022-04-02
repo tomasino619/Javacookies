@@ -37,7 +37,10 @@ function Header() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to="/" className='navbar-rcpd' onClick={closeMobileMenu}>
-                        RCPD Trading &amp; Fabrication
+                    <img
+                            src="https://res.cloudinary.com/javacookies/image/upload/v1648876965/Trading_and_Fabrication_1920_980_px_1_iwo4xl.png"
+                            width="190"
+                        />
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
