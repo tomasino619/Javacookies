@@ -5,22 +5,24 @@ import './Footer.css';
 function Footer() {
   return (
     <div className='footer-container'>
-        <section className='footer-subscription'>
-            <p className='footer-subscription-heading'>
-                RCPD Trading &amp; Fabrication
-            </p>
-            <p className='footer-subscription-text'>
-                Short description or policy about the company may be put here or any other text.
-            </p>
-        </section>
 
         <div className='footer-links'>
             <div className='footer-link-wrapper'>
+                <div className='footer-title'>
+                    <p className='footer-subscription-heading'>
+                        RCPD Trading &amp; Fabrication
+                    </p>
+                    <p className='footer-subscription-text'>
+                        Short description or policy about the company may be put here or any other text.
+                    </p>
+                    <p className='website-rights'>
+                        &copy; 2022 RCPD Trading & Fabrication. All Rights Reserved.
+                    </p>
+                </div>
                 <div className='footer-link-items'>
                     <h2>Visit Us</h2>
                     <p>Warehouse</p>
-                    <p>1388 Sitio Maagay</p>
-                    <p>Brgy. Inarawan</p>
+                    <p>1388 Sitio Maagay Brgy. Inarawan</p>
                     <p>Antipolo City</p>
                 </div>
                 <div className='footer-link-items'>
@@ -49,22 +51,6 @@ function Footer() {
                 </div>
             </div>
         </div>
-
-        <section clasName='social-media'>
-            <div className='social-media-wrap'>
-                <div className='footer-logo'>
-                    <Link to='/' className='social-logo'>
-                        <img
-                            src="https://res.cloudinary.com/javacookies/image/upload/v1647930821/rcdp_logo_bzfwhy.png" className='rcpd-logo' alt='rcpd logo'
-                        />
-                    </Link>
-                </div>
-            </div>
-
-            <small className='website-rights'>RCPD &copy; 2022</small>
-
-        </section>
-
     </div>
   )
 }

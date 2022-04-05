@@ -55,18 +55,26 @@ const Products = () => {
                                                     <div id='photo-container'>
                                                         {product.images && <img src={product?.images[0].path ? product.images[0].path : ''} className="img-fluid-showcase" />}
                                                     </div>
-                                                    <p>{product.name}</p>
-                                                    <div id="divider-content">
-                                                        <hr class="solid"></hr>
-                                                    </div>
-                                                    <p>{product.category}</p>
-                                                    <p id='desc-limiter'>{product.description}</p>
-                                                    <p>₱{product.price}</p>
-                                                    <div id='button-container'>
-                                                        <Link to={`/products/${product._id}`}>
-                                                            <button>View</button>
-                                                        </Link>
-                                                    </div>
+                                                    <p className='parag'>
+                                                        {product.name}
+                                                    </p>
+                                                        <div id="divider-content">
+                                                            <hr class="solid"></hr>
+                                                        </div>
+                                                    <p>
+                                                        {product.category}
+                                                    </p>
+                                                        <p id='desc-limiter'>
+                                                            {product.description}
+                                                        </p>
+                                                    <p>
+                                                        ₱{product.price}
+                                                    </p>
+                                                        <div id='button-container'>
+                                                            <Link to={`/products/${product._id}`}>
+                                                                <button>View</button>
+                                                            </Link>
+                                                        </div>
                                                 </div>
                                             </div> 
                                         </>

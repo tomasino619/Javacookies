@@ -8,6 +8,10 @@
   font-family: 'Inter';
 }
 
+.parag {
+  margin: 0;
+}
+
 .logo {
   padding-left : 35px;
   padding-right: 26px;
@@ -70,20 +74,22 @@
 .card-container {
   display       : flex;
   flex-wrap     : wrap;
-  flex-direction: row;
+  flex-direction : row;
+  justify-content: center;
+  align-items    : center;
 }
 
 .card {
   flex           : auto;
-  min-width      : 300px;
-  max-width      : 300px;
-  border         : .5px solid black;
+  min-width      : 100px;
+  max-width      : 250px;
   display        : flex;
   flex-direction : column;
   justify-content: center;
   align-items    : center;
   margin-right   : 16px;
   margin-left    : 5px;
+  border-radius  : 10px;
 }
 
 .col-container {
@@ -244,8 +250,6 @@ hr.solid {
 .product-col-container {
   display       : flex;
   flex-direction: column;
-  margin-left   : 100px;
-  margin-right  : 50px;
 }
 
 #product-card {
@@ -253,9 +257,8 @@ hr.solid {
 }
 
 #photo-container {
-  margin-top   : 18px;
-  margin-bottom: 10px;
-  height       : 250px;
+  margin-bottom: 70px;
+  height       : 150px;
   width        : 250px;
 }
 
@@ -268,6 +271,7 @@ hr.solid {
 .img-fluid-showcase {
   height: 200px;
   width : 250px;
+  border-radius  : 10px 10px 0 0;
 }
 
 #button-container {
@@ -311,7 +315,7 @@ hr.solid {
   width  : 790px;
   height : 490px;
   margin : 10px;
-  border : solid;
+
   padding: 0%;
 }
 
