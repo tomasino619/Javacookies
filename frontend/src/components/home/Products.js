@@ -70,7 +70,7 @@ const Products = () => {
                                                     <p>
                                                         ₱{product.price}
                                                     </p>
-                                                        <div id='button-container'>
+                                                        <div id='card-button'>
                                                             <Link to={`/products/${product._id}`}>
                                                                 <button>View</button>
                                                             </Link>

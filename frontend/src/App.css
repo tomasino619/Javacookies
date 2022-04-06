@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+.row {
+  max-width: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,7 +55,7 @@
   margin: auto;
   background: rgba(46, 46, 46, 0.6); 
   color: #fff;
-  width:max-content;
+  width: 100%;
 }
 
 #aboutus {
@@ -81,15 +85,16 @@
 
 .card {
   flex           : auto;
-  min-width      : 100px;
-  max-width      : 250px;
+  min-width      : 50px;
   display        : flex;
   flex-direction : column;
   justify-content: center;
   align-items    : center;
-  margin-right   : 16px;
-  margin-left    : 5px;
-  border-radius  : 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 10%;
+  text-align: center;
+  font-family: arial;
 }
 
 .col-container {
@@ -118,8 +123,9 @@ hr.solid {
 }
 
 #aboutheader {
-  margin-left: 24%;
+  margin-left: 45%;
   padding-top: 30px;
+  max-width: 10%;
 }
 
 #aboutdesc {
@@ -244,7 +250,7 @@ hr.solid {
 
 #category {
   width      : 140px;
-  margin-left: 17%;
+  margin-left: 20%;
 }
 
 .product-col-container {
@@ -257,7 +263,7 @@ hr.solid {
 }
 
 #photo-container {
-  margin-bottom: 70px;
+  margin-bottom: 25px;
   height       : 150px;
   width        : 250px;
 }
@@ -269,9 +275,8 @@ hr.solid {
 }
 
 .img-fluid-showcase {
-  height: 200px;
-  width : 250px;
-  border-radius  : 10px 10px 0 0;
+  height: 100%;
+  width : 87.5%;
 }
 
 #button-container {
@@ -402,9 +407,23 @@ hr.solid {
   width: 100%;
   height: 1000px;
   margin: auto;
+  background-attachment: fixed;
 }
 
 .aboutParagraph1{
   font-size: 20px;
   padding: 0%;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 220px;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

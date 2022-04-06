@@ -62,7 +62,7 @@ const About = () => {
         <div className="underline mx-auto"></div>
         <div className="card-deck">
           <div class='faq-space'></div>
-          <div class="row" id='faq-deck'>
+          <div id='faq-deck'>
             <div class="col-sm">
 
               <div class="faqcard">
