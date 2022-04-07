@@ -52,7 +52,7 @@ const Contacts = () => {
                 </div>
                 <div class="flex-col size2">
                   <span class="txt1 p-b-20">Address</span>
-                  <span class="txt2">Nueve Ecija</span>
+                  <span class="txt2">Warehouse 1388 Sitio Maagay, Brgy. Inarawan, Antipolo City</span>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ const Contacts = () => {
                 </div> 
                 <div class="flex-col size2">
                   <span class="txt1 p-b-20"> Phone</span>
-                  <span class="txt2">09560472527</span>
+                  <span class="txt2"> +639958494580</span>
                 </div>
               </div>
 
@@ -72,7 +72,7 @@ const Contacts = () => {
                 </div> 
                 <div class="flex-col size2">
                   <span class="txtemail p-b-20">E-mail</span>
-                  <span class="txt2email">rgbaby@gmail.com</span>
+                  <span class="txt2email">rcpdfabtrading@gmail.com</span>
                 </div>
               </div>
 
