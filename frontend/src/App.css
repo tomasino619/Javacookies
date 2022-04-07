@@ -240,17 +240,13 @@ hr.solid {
   background-color: orangered;
 }
 
-#vb2 {
-
-}
-
 #vb2:hover {
   background-color: orangered;
 }
 
 #category {
   width      : 140px;
-  margin-left: 20%;
+  margin-left: 25.6%;
 }
 
 .product-col-container {
@@ -299,7 +295,7 @@ hr.solid {
 #product-info {
   margin-left  : 10%;
   margin-right : 10%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 #desc-limiter {
@@ -313,14 +309,14 @@ hr.solid {
 #photo-col {
   width : 800px;
   height: 500px;
-  margin: auto;
+  margin-top: 9%;
+  margin-left: 10%;
 }
 
 #photo-limit {
   width  : 790px;
   height : 490px;
   margin : 10px;
-
   padding: 0%;
 }
 
@@ -401,7 +397,7 @@ hr.solid {
   text-align: center;
   margin: auto;
   background: url("../public/images/placeholder1.jpeg");
-  background-size: 2000px;
+  background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 50px;
   width: 100%;
@@ -426,4 +422,71 @@ hr.solid {
   width: 220px;
   font-size: 18px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*products and services detail */
+.header-title{
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.detailarea{
+  display       : flex;
+  flex-direction: column;
+}
+
+.category-detail{
+  text-align: left;
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: 5;
+}
+
+.name-detail{
+    text-align: left;
+    margin-left: 5%;
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    overflow: auto;
+}
+
+.price-detail{
+  text-align: left;
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: 100px;
+}
+
+.description-detail{
+  text-align: left;
+  margin-left: 10%;
+  text-align: left;
+  margin-left: 5%;
+  font-size: 15px;
+  font-weight: 100px;
+  overflow: auto;
+}
+
+.underline-detail{
+  height: 04px;
+  width: 10rem;
+  background-color: #000000;
+  margin-top: 10%;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+
+#text-detail {
+  height    : 50%;
+  width     : 500px;
+  position  : fixed;
+  margin-top: 5%;
+  margin-left: 5%;
+  padding-top: 5%;
 }

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { productsApi } from "../api/productsApi"
+import { Carousel } from 'react-bootstrap'
+import Footer from '../layout/Footer'
 
 const ProductDetails = () => {
 
@@ -22,25 +24,32 @@ const ProductDetails = () => {
     return (
         <div class='row' id='product-info'>
                 <div id="photo-col">
-                    {product.images && product.images.map(image => <img src={image.path ? image.path : ''} className="img-fluid" id="photo-limit"/> )}
+                    <div class="header-title">
+                        {product.name}
+                    </div>
+                    <Carousel>
+                        {product?.images && product?.images.map(({path}) => (
+                                    <Carousel.Item>
+                                            <img src={path ? path :''} alt="First slide" id="photo-limit" className="img-fluid" />
+                                    </Carousel.Item>
+                        ))}
+                    </Carousel>
                 </div>
 
-                <div class="col-sm" id="text-col">
-                    <div id="fixed-text">
+                <div class="col-sm">
+                    <div id="text-detail">
                         <div id="fixed-text-cont">
-                            <div>
-                                {product.name}
-                            </div>
-
-                            <div>
+                            <div class="category-detail">
                                 {product.category}
                             </div>
-
-                            <div>
+                            <div class="name-detail">
+                                {product.name}
+                            </div>
+                            <div class="price-detail">
                                 <p>₱{product.price}</p>
                             </div>
-
-                            <div>
+                            <div className="underline-detail"></div>
+                            <div class="description-detail">
                                 {product.description}
                             </div>
                         </div>

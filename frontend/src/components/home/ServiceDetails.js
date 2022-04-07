@@ -2,6 +2,7 @@ import { product } from "prelude-ls"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { servicesApi } from "../api/servicesApi"
+import { Carousel } from 'react-bootstrap'
 
 const ServiceDetails = () => {
 
@@ -23,25 +24,32 @@ const ServiceDetails = () => {
     return (
         <div class='row' id='product-info'>
                 <div id="photo-col">
-                    {service.images && service.images.map(image => <img src={image.path ? image.path : ''} className="img-fluid" id="photo-limit" /> )}
+                    <div class="header-title">
+                        {service.name}
+                    </div>
+                    <Carousel>
+                        {service?.images && service?.images.map(({path}) => (
+                                    <Carousel.Item>
+                                            <img src={path ? path :''} alt="First slide" id="photo-limit" className="img-fluid" />
+                                    </Carousel.Item>
+                        ))}
+                    </Carousel>
                 </div>
 
-                <div class="col-sm" id="text-col">
-                    <div id="fixed-text">
+                <div class="col-sm">
+                    <div id="text-detail">
                         <div id="fixed-text-cont">
-                            <div>
-                                {service.name}
-                            </div>
-
-                            <div>
+                            <div class="category-detail">
                                 {service.category}
                             </div>
-
-                            <div>
+                            <div class="name-detail">
+                                {service.name}
+                            </div>
+                            <div class="price-detail">
                                 <p>₱{service.price}</p>
                             </div>
-
-                            <div>
+                            <div className="underline-detail"></div>
+                            <div class="description-detail">
                                 {service.description}
                             </div>
                         </div>
