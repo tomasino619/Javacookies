@@ -1,48 +1,85 @@
 import React, { Fragment } from 'react'
 import Footer from '../layout/Footer'
 import '../../../src/Contacts.css'
+import { Divider } from 'semantic-ui-react'
 
 const Contacts = () => {
   return (
     <Fragment>
       <body>
-        <div class="container-contact100">
+      <section id="contact">
+       <div class="container">
+           <h3 class="text-center text-uppercase">contact us</h3>
+           <h5 class="text-center w-75 m-auto pdef">Feel free to reach us out your with concerns or questions.</h5>
+           <div class="row">
+             <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+               <div class="card border-0">
+                  <div class="card-body text-center">
+                    <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                    <h4 class="text-uppercase mb-5">phone</h4>
+                    <p><a href="tel:09958494580">+639958494580</a></p>
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+               <div class="card border-0">
+                  <div class="card-body text-center">
+                    <i class="fab fa-facebook-f fa-5x mb-3" aria-hidden="true"></i>
+                    <h4 class="text-uppercase mb-5">Facebook</h4>
+                   <address><a
+                        href='https://www.facebook.com/rcpdfab'
+                        target='_blank'
+                        rel='noreferrer'
+                        aria-label='Facebook'>
+                            RCPD Trading and Fabrication
+                    </a> </address>
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+               <div class="card border-0">
+                  <div class="card-body text-center">
+                    <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                    <h4 class="text-uppercase mb-5">Address</h4>
+                    <address class="add2"><a
+                        href='https://goo.gl/maps/x5JR7uoyZaKs5TkGA'
+                        target='_blank'
+                        rel='noreferrer'
+                        aria-label='Facebook'>
+                            1388 Sitio Maagay, Brgy. Inarawan, Antipolo City
+                    </a>  </address>
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+               <div class="card border-0">
+                  <div class="card-body text-center">
+                    <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                    <h4 class="text-uppercase mb-5">email</h4>
+                    <p>< a href="mailto:rcpdfabtrading@gmail.com">rcpdfabtrading@gmail.com</a></p>
+                  </div>
+                </div>
+             </div>
+           </div>
+       </div>
+      </section>  
+      </body>
+      <Footer/>
+    </Fragment>
+  )
+}
+
+export default Contacts
+
+{/* <div class="container-contact100">
           <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
-             <span class="contact100-form-title"> Send Us A Message</span>
-              <label class="label-input100" for="first-name"> Tell us your name</label>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type your first name"> 
-                  <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name"></input>
-                  <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type your last name"> 
-                  <input class="input100" type="text" name="last-name" placeholder='Last name'></input>
-                  <span class ="focus-input100"></span>
-                </div>
+            <div class="contact100-form validate-form">
+             <div id="map"> </div>
+             <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.540907533794!2d121.18810621401391!3d14.625209180395995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bf074ecac3ff%3A0xf7f86b3a19fb254d!2sRCPD%20FABRICATION%20ENTERPRISE%20CO.!5e0!3m2!1sen!2sph!4v1649416344098!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
 
-              <label class="label-input100" for="email">Enter your email</label>
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                  <input id="email" class="input100" type="text" name="email" placeholder="Ex. gandachla@true.com"></input>
-                  <span class="focus-input100"></span>
-                </div>
-
-              <label class="label-input100" for="phone">Enter your phone number</label>
-                <div class="wrap-input100">
-                  <input id="phone" class="input100" type="text" name="phone" placeholder="0918076247"></input>
-                  <span class="focus-input100"></span>
-                </div>
-
-              <label class="label-input100" for="message">Message</label>
-                <div class="wrap-input100 validate-input" data-validate="Messageis required">
-                  <textarea id="message" class="input100" name="message" placeholder='Write us a message'></textarea>
-                  <span class="focus-input100"></span>
-              </div>
-
-              <div class="container-contact100-form-btn">
-                <button class="contact100-form-btn">Send Message</button>
-              </div>
-
-            </form>
+            </div>
 
             <div class="contact100-more flex-col-x-m" >
               <div class ="flex-w size1 p-b-47">
@@ -75,26 +112,9 @@ const Contacts = () => {
                   <span class="txt2email">rcpdfabtrading@gmail.com</span>
                 </div>
               </div>
-
-             
-              
-
             </div>
-              
-            
-           
-
           </div>
-        </div>
-
-        
-      </body>
-      <Footer/>
-    </Fragment>
-  )
-}
-
-export default Contacts
+        </div> */}
 
 {/* <div class="address details">
 <i class="fas fa-map-marker-alt"></i>

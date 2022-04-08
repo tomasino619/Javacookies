@@ -37,7 +37,7 @@ function Footer() {
                     <Link to='/'>About Us</Link>
                     <Link to='/products'>Products</Link>
                     <Link to='/services'>Services</Link>
-                    <Link to='/contacts'>Frequently Asked Questions</Link>
+                    <Link to='/about'>Frequently Asked Questions</Link>
                 </div>
                 <div className='footer-link-items'>
                     <h2>Social Media</h2>
