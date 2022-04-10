@@ -42,16 +42,16 @@ const ListCategories = () => {
     return (
         <>
             {loading ? <h1>Loading...</h1> : categories ? (
-                <>
+                <div className='tableArea'>
                     <h1>Category List</h1>
-                    <table>
-                        <thead>
+                    <table className='table'>
+                        <thead id='tableHeader'>
                             <th>Name</th>
                             <th>Type</th>
                             <th>Created By</th>
                             <th>Actions</th>
                         </thead>
-                        <tbody>
+                        <tbody align='center'>
                             {categories && categories.map(category => (
                                 <>
                                     <tr>
@@ -68,7 +68,7 @@ const ListCategories = () => {
                             ))}
                         </tbody>
                     </table>
-                </>
+                </div>
             ) : <h1>No categories found</h1>}
         </>
     )

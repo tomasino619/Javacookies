@@ -570,3 +570,68 @@ hr.solid {
   text-decoration: none;
   margin: auto;
 }
+
+.tableArea{
+  padding-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table{
+  border:solid;
+  width: 500px;
+  align-items: center;
+  margin: auto;
+}
+
+.tableAreaMain{
+  padding-top: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableMain{
+  border: solid;
+  width: 1100px;
+  align-items: center;
+  margin: auto;
+}
+
+.tableMainUser{
+  border: solid;
+  width: 700px;
+  align-items: center;
+  margin: auto;
+}
+
+#buttonsMain{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+
+.img-fluid-main{
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#tableHeader{
+  background-color:rgba(46, 46, 46, 0.6);
+}
+
+.contentSpace{
+border: solid;
+}
+
+#desc-limiter-main {
+  display      : inline-block;
+  white-space  : nowrap;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  max-width    : 10ch;
+  margin-top: 18px;
+}

@@ -42,34 +42,34 @@ const ListUsers = () => {
     return (
         <>
             {loading ? <h1>Loading...</h1> : users ? (
-                <>
+                <div className='tableAreaMain'>
                     <h1>All users</h1>
-                    <table>
-                        <thead>
-                            <th>Name</th>
+                    <table className='tableMainUser'>
+                        <thead id='tableHeader'>
+                            {/* <th>Name</th> */}
                             <th>Username</th>
                             <th>Role</th>
                             <th>Actions</th>
                         </thead>
-                        <tbody>
+                        <tbody align='center'>
                             {users && users.map(user => (
                                 <>
-                                    <tr>
-                                        <td>{user.first_name} {user.last_name}</td>
+                                    <tr className='contentSpace'>
+                                        {/* <td>{user.first_name} {user.last_name}</td> */}
                                         <td>{user.username}</td>
                                         <td>{user.role}</td>
                                         <td>
-                                            <Link to={`/admin/user/update/${user._id}`}>Update</Link>
+                                            <Link to={`/admin/user/update/${user._id}`} id='buttonsMain'>Update</Link>
                                             <button onClick={() => {
                                                 deleteHandler(user._id)
-                                            }} disabled={user.role === 'Admin' ? true : false}>Delete</button>
+                                            }} disabled={user.role === 'Admin' ? true : false} id='buttonsMain'>Delete</button>
                                         </td>
                                     </tr>
                                 </>
                             ))}
                         </tbody>
                     </table>
-                </>
+                </div>
             ) : <h1>No users found</h1>}
         </>
     )

@@ -23,21 +23,21 @@ const ListAudits = () => {
     }, [dispatch, alert, error])
 
     return (
-        <>
+        <div className='tableAreaMain'>
             {loading ? <h1>Loading...</h1> : audits ? (
                 <>
                     <h1>Audit Log</h1>
-                    <table>
-                        <thead>
+                    <table className='tableMain'>
+                        <thead id='tableHeader'>
                             <th>Date</th>
                             <th>Name</th>
                             <th>Description</th>
                             <th>Created By</th>
                         </thead>
-                        <tbody>
+                        <tbody align='center'>
                             {audits && audits.map(audit => (
                                 <>
-                                    <tr>
+                                    <tr className='contentSpace'>
                                         <td>{audit.date}</td>
                                         <td>{audit.name}</td>
                                         <td>{audit.description}</td>
@@ -49,7 +49,7 @@ const ListAudits = () => {
                     </table>
                 </>
             ) : <h1>No audits found</h1>}
-        </>
+        </div>
     )
 }
 

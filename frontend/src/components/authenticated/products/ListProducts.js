@@ -35,11 +35,11 @@ const ListProducts = () => {
     return (
         <>
             { loading ? <h1>Loading...</h1> : (
-                <>
+                <div className='tableAreaMain'>
                     <h1>Products</h1>
                     <div className='card-container'>
-                        <table>
-                            <thead>
+                        <table className='tableMain'>
+                            <thead id='tableHeader'>
                                 <th>ID</th>
                                 <th>Image</th>
                                 <th>Name</th>
@@ -48,25 +48,25 @@ const ListProducts = () => {
                                 <th>Description</th>
                                 <th>Actions</th>
                             </thead>
-                            <tbody>
+                            <tbody align='center'>
                                 {products.length > 0 ? products.map(product => (
-                                    <tr key={product._id}>
+                                    <tr key={product._id} className='contentSpace'>
                                         <td>{product._id}</td>
                                         <td>
-                                            <img src={product?.images[0].path ? product.images[0].path : ''} className="img-fluid" width="50px" />
+                                            <img src={product?.images[0].path ? product.images[0].path : ''} className="img-fluid-main" width="50px" />
                                         </td>
                                         <td>{product.name}</td>
                                         <td>{product.category}</td>
                                         <td>{product.price}</td>
-                                        <td id='desc-limiter'>{product.description}</td>
+                                        <td id='desc-limiter-main'>{product.description}</td>
                                         <td>
                                             <Link to={`/products/${product._id}`}>
-                                                <button>View</button>
+                                                <button id='buttonsMain'>View</button>
                                             </Link>
                                             <Link to={`/admin/product/${product._id}`}>
-                                                <button>Edit</button>
+                                                <button id='buttonsMain'>Edit</button>
                                             </Link>
-                                            <button onClick={() => deleteData(product._id)}>Delete</button>
+                                            <button onClick={() => deleteData(product._id)} id='buttonsMain'>Delete</button>
                                         </td>
                                     </tr>
                                 ))
@@ -76,7 +76,7 @@ const ListProducts = () => {
 
                         </table>
                     </div >
-                </>
+                </div>
             )}
         </>
     )
