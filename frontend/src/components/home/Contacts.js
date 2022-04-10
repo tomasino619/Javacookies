@@ -71,7 +71,7 @@ const Contacts = () => {
 
 export default Contacts
 
-{/* <div class="container-contact100">
+/*{ <div class="container-contact100">
           <div class="wrap-contact100">
             <div class="contact100-form validate-form">
              <div id="map"> </div>
@@ -114,9 +114,9 @@ export default Contacts
               </div>
             </div>
           </div>
-        </div> */}
+        </div> }*/
 
-{/* <div class="address details">
+/*{ <div class="address details">
 <i class="fas fa-map-marker-alt"></i>
 <div class="topic">Address</div>
 <div class="text-one">Surkhet, NP12</div>
@@ -133,4 +133,4 @@ export default Contacts
 <div class="topic">Email</div>
 <div class="text-one">codinglab@gmail.com</div>
 <div class="text-two">info.codinglab@gmail.com</div>
-</div> */}
+</div> }*/

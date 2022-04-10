@@ -27,12 +27,20 @@ const Profile = () => {
         <>
             <Metadata title={'My Profile'} />
             {loading ? <h1>Loading</h1>
-                : <>
-                    <p>Username: {user.username}</p>
-                    <p>Email: {user.email}</p>
-                    <p>Role: {user.role}</p>
-                    <Link to='/password/update'>Change password</Link>
-                </>}
+                :<div className='userbg'>
+                        <div className='ucol'>
+                            <div>
+                                <img src="avatar2.png" alt="Avatar" class="avatar"/>
+                            </div>
+                            <div className='profile-info'>
+                                <p className='profile-userp'>{user.username}</p>
+                                <div class='profile-div'></div>
+                                <p className='profile-emailp'>{user.email}</p>
+                                <p className='profile-rolep'>{user.role}</p>
+                            </div>
+                                <Link className='alter-pass' to='/password/update'>Change password</Link>
+                        </div>
+                </div>}
         </>
     )
 }
