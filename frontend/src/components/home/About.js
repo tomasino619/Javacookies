@@ -13,11 +13,21 @@ const About = () => {
             <h3 className="main_heading"> COMPANY PROFILE</h3>
             <div className="underline mx-auto"></div>
             <p className="aboutParagraph1">
+            <br></br>
               RCPD Trading and Fabrications is a growing industrial engineering company.
-              Expert on total machinery automation. <br></br> The company has been established to specialize in industrial automation.
-              Parts are made with the combination of Japan and <br></br> local technology  assuring quality and support  after-sales parts and services.
-              Its key products include <br></br> design and fabrication of custom made processing and packaging line equipment.
-              Our machines are well <br></br> advanced that can automate your production line to minimize in less time, accurate and efficient.
+              Expert on total machinery automation. The company has been <br></br> established to specialize in industrial automation.
+              Parts are made with the combination of Japan and local technology assuring quality and <br></br> support  after-sales parts and services.
+              Its key products include design and fabrication of custom made processing and packaging line equipment.<br></br>
+              Our machines are well advanced that can automate your production line to minimize in less time, accurate and efficient.<br></br> <br></br> 
+
+              Founded in 2020, RCPD trading and fabrication is a local manufacturer of precision machinery components and machines for industrial set up<br></br>
+              such as filling machines, soap extruders, stamping machines, pipe laying, RO. System, Water Waster Disposal, cosmetic machines, Electrical<br></br>
+              Components and Programs. We also offer HHO, our new machine line up for industrial fuel saver for gasoline, diesel and LPG. 
+              facilities such as <br></br>Lathe Machine, Milling machine, Machinery equipments, grinders, Surface grinders and welding machines.
+              Our customers are mostly <br></br>domestic in the Philippines.<br></br><br></br>
+
+              Our company specialzes in steelwork and machinery for industrial set ups, but we also offer services for different platforms<br></br> such as household 
+              and businesses.
             </p>
           </div>
         </div>
@@ -32,25 +42,24 @@ const About = () => {
             <div className="col-md-4">
               <h6 className="mission_header">Our Mission</h6>
               <p>
-                To be the market leader in total quality industrial machine automation services.<br></br>
-                "For the glory of God."
-                - Ephesians 3:20
+                To collaborate with the local and international manufacturers and SME's by using quality and precision machines.
+                To be <br></br> able to offer low to medium cost machines for startup <br></br>business and provide quality products.
               </p>
             </div>
             <div className="col-md-4">
               <h6 className="vision_header">Our Vision</h6>
               <p>
-                To promote fast and efficient industrial operations through innovative quality machine designs,
-                fabrications and end to-end business machine facility setup.
+                To provide quality and sustainable machines for industrial needs per client requirements. To provide work for those <br></br>who are 
+                situated in sitio maagay barangay inarawan <br></br>as their livelihood source of income.
               </p>
             </div>
             <div className="col-md-4">
               <h6 className="core_header">Our Core Values</h6>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                </br>
-                Lorem Ipsum has been the industry's standard dummy text ever <br>
-                </br>since the 1500s, when an unknown
+                The company's core values are Trust, Ethics and Integrity.<br></br> These three are important and are always observed by the 
+                <br></br>company as well as the staff both
+                inside and outside of the <br></br>workplace. We uphold professionalism and honestly in order to<br></br> build trust among peers and customers.
+
               </p>
             </div>
           </div>

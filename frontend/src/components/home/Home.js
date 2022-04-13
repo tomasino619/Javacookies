@@ -43,10 +43,10 @@ const Home = () => {
                         <div class="col-md-12 text-center"></div>
                         <h3 className="main_heading" id="companyProfile"> COMPANY PROFILE</h3>
                         <div className="underline mx-auto"></div>
-                        <p className="aboutParagraph1">
+                        <p className="aboutParagraph1" >
                             RCPD Trading and Fabrications is a growing industrial engineering company.
                             Expert on total machinery automation. <br></br> The company has been established to specialize in industrial automation.
-                            Parts are made with the combination of Japan and <br></br> local technology  assuring quality and support  after-sales parts and services.
+                            Parts are made with the combination of Japan and local technology  assuring quality and support  after-sales parts and services.
                             Its key products include <br></br> design and fabrication of custom made processing and packaging line equipment.
                             Our machines are well <br></br> advanced that can automate your production line to minimize in less time, accurate and efficient.
                         </p>

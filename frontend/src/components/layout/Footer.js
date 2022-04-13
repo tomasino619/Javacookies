@@ -13,7 +13,7 @@ function Footer() {
                         RCPD Trading &amp; Fabrication
                     </p>
                     <p className='footer-subscription-text'>
-                        Short description or policy about the company may be put here or any other text.
+                        Mufacturer of Quality Filling Machines, all kinds of tanks, and other metalworks.
                     </p>
                     <p className='website-rights'>
                         &copy; 2022 RCPD Trading & Fabrication. All Rights Reserved.

@@ -80,7 +80,7 @@ const CreateProduct = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
-                    <Form.Control type="number" placeholder="Price" value={product.price} onChange={(e) => setProduct({ ...product, price: e.target.value })} required />
+                    <Form.Control type="text" placeholder="Price" value={product.price} onChange={(e) => setProduct({ ...product, price: e.target.value })} required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">

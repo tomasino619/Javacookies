@@ -93,7 +93,7 @@ const UpdateService = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
-                    <Form.Control type="number" placeholder="Price" value={service.price} onChange={(e) => setService({...service, price: e.target.value})} required />
+                    <Form.Control type="text" placeholder="Price" value={service.price} onChange={(e) => setService({...service, price: e.target.value})} required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
