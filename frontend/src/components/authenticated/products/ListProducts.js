@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useAlert } from 'react-alert'
 import { Link } from 'react-router-dom'
 import { productsApi } from '../../api/productsApi'
+import Metadata from "../../layout/Metadata"
 
 const ListProducts = () => {
     const [products, setProducts] = useState([])
@@ -34,6 +35,7 @@ const ListProducts = () => {
 
     return (
         <>
+        <Metadata title={"View Products"} />
             { loading ? <h1>Loading...</h1> : (
                 <div className='tableAreaMain'>
                     <h1>Products</h1>

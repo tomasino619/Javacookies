@@ -1,3 +1,4 @@
+import Metadata from "../../layout/Metadata"
 import { Fragment, useEffect, useState } from 'react';
 import { useAlert } from 'react-alert';
 import { Button, Form } from 'react-bootstrap';
@@ -79,6 +80,7 @@ const UpdateProduct = () => {
     return (
         categoryList && product ?
         <Fragment>
+            <Metadata title={"Update Product"} />
             <Form id='mrgn' onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>

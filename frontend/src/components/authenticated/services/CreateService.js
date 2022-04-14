@@ -1,3 +1,4 @@
+import Metadata from "../../layout/Metadata"
 import { Fragment, useEffect, useState } from 'react';
 import { useAlert } from 'react-alert';
 import { Button, Form } from 'react-bootstrap';
@@ -5,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { servicesApi } from '../../api/servicesApi';
 import { useDispatch, useSelector } from 'react-redux';
 import { categoryActions } from '../../../actions';
+
 
 const CreateService = () => {
 
@@ -61,6 +63,7 @@ const CreateService = () => {
     return (
         categoryList ?
         <Fragment>
+            <Metadata title={"Create Service"} />
             <Form  id='mrgn' onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>

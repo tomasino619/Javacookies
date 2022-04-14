@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { servicesApi } from "../api/servicesApi"
 import { Carousel } from 'react-bootstrap'
+import Metadata from "../layout/Metadata"
 
 const ServiceDetails = () => {
 
@@ -23,6 +24,7 @@ const ServiceDetails = () => {
 
     return (
         <div class='row' id='product-info'>
+             <Metadata title={"Service Details"} />
                 <div id="photo-col">
                     <div class="header-title">
                         {service.name}

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { categoryActions, clearErrors } from '../../../actions'
 import { categoryConstants } from '../../../constants'
+import Metadata from "../../layout/Metadata"
 
 const ListCategories = () => {
     const dispatch = useDispatch()
@@ -41,6 +42,7 @@ const ListCategories = () => {
 
     return (
         <>
+        <Metadata title={"View Categories"} />
             {loading ? <h1>Loading...</h1> : categories ? (
                 <div className='tableArea'>
                     <h1>Category List</h1>

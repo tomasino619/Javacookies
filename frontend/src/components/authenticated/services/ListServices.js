@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useAlert } from 'react-alert'
 import { Link } from 'react-router-dom'
 import { servicesApi } from '../../api/servicesApi'
+import Metadata from "../../layout/Metadata"
 
 const ListServices = () => {
     const [services, setServices] = useState([])
@@ -36,6 +37,7 @@ const ListServices = () => {
 
     return (
         <>
+        <Metadata title={"View Services"} />
             { loading ? <h1>Loading...</h1> : (
                 <div className='tableAreaMain'>
                     <h1>Services</h1>

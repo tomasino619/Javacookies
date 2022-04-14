@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { productsApi } from "../api/productsApi"
 import { Carousel } from 'react-bootstrap'
 import Footer from '../layout/Footer'
+import Metadata from "../layout/Metadata"
 
 const ProductDetails = () => {
 
@@ -23,6 +24,7 @@ const ProductDetails = () => {
 
     return (
         <div class='row' id='product-info'>
+            <Metadata title={"Product Details"} />
                 <div id="photo-col">
                     <div class="header-title">
                         {product.name}

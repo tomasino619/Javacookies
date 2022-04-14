@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { clearErrors, categoryActions } from '../../../actions'
 import { categoryConstants } from '../../../constants'
 import { useNavigate } from "react-router-dom"
+import Metadata from "../../layout/Metadata"
 
 const CreateCategory = () => {
     const dispatch = useDispatch()
@@ -38,6 +39,7 @@ const CreateCategory = () => {
 
     return (
         <>
+        <Metadata title={"Create Category"} />
             <Container style={{ width: '50%' }}>
                 <h1>New Category</h1>
                 <Form onSubmit={submitHandler}>

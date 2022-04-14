@@ -6,6 +6,7 @@ import { userConstants } from '../../../constants'
 import { useNavigate } from "react-router-dom"
 import Metadata from '../../layout/Metadata'
 
+
 const UpdatePassword = () => {
     const alert = useAlert()
     const dispatch = useDispatch()
@@ -46,15 +47,18 @@ const UpdatePassword = () => {
     }
 
     return (
-        <>
+        <body>
             <Metadata title={'Update Password'} />
             <form onSubmit={submitHandler}>
-                <input type="password" name="oldPassword" value={oldPassword} onChange={e => setOldPassword(e.target.value)} placeholder="old password"/>
-                <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="password"/>
-                <input type="password" name="confirmPassword" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} placeholder="confirm password"/>
-                <input type="submit" value="Submit" disabled={loading ? true : false} />
+                <fieldset>
+                    <legend>Update Password</legend>
+                        <input type="password" name="oldPassword" value={oldPassword} onChange={e => setOldPassword(e.target.value)} placeholder="old password"/>
+                        <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="password"/>
+                        <input type="password" name="confirmPassword" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} placeholder="confirm password"/>
+                        <input type="submit" value="Submit" disabled={loading ? true : false} />
+                </fieldset>
             </form>
-        </>
+        </body>
     )
 }
 

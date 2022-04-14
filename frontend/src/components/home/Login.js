@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Container, Form, Button, Card } from 'react-bootstrap'
 import { userActions, clearErrors } from '../../actions'
 import { useNavigate } from "react-router-dom"
+import Metadata from "../layout/Metadata"
 
 const Login = () => {
     const alert = useAlert()
@@ -48,6 +49,7 @@ const Login = () => {
 
     return (
         <Fragment>
+            <Metadata title={"Login"} />
             <Container fluid style={{ paddingTop: '50px' }}>
                 <Card style={{ width: '25rem', margin: 'auto' }}>
                     <Card.Body>

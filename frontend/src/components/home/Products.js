@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { productsApi } from '../api/productsApi'
 import { categoryActions  } from '../../actions'
 import Footer from '../layout/Footer'
+import Metadata from "../layout/Metadata"
 
 const Products = () => {
     const [products, setProducts] = useState([])
@@ -31,6 +32,7 @@ const Products = () => {
 
     return (
         <>
+        <Metadata title={"Products"} />
             <div className='product-col-container'>
                 {loading ? <h1>Loading ... </h1> : (
                     <>

@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react'
 import Footer from '../layout/Footer'
 import '../../../src/Contacts.css'
+import Metadata from "../layout/Metadata"
 import { Divider } from 'semantic-ui-react'
 
 const Contacts = () => {
   return (
     <Fragment>
+      <Metadata title={"Contacts"} />
       <body>
       <section id="contact">
        <div class="container">

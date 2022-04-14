@@ -1,11 +1,13 @@
 import React from 'react'
 import Footer from '../layout/Footer'
+import Metadata from "../layout/Metadata"
 import { Button } from 'react-bootstrap';
 import history from './About';
 
 const About = () => {
   return (
     <div>
+      <Metadata title={"About"} />
       <section className="sectionAbout">
         <div className="containerAbout">
           <div class="row">
@@ -42,14 +44,14 @@ const About = () => {
             <div className="col-md-4">
               <h6 className="mission_header">Our Mission</h6>
               <p>
-                To collaborate with the local and international manufacturers and SME's by using quality and precision machines.
-                To be <br></br> able to offer low to medium cost machines for startup <br></br>business and provide quality products.
+                To collaborate with the local and international manufacturers and SME's<br></br> by using quality and precision machines.
+                To be  able to offer low to medium cost <br></br> machines for startup business and provide quality products.
               </p>
             </div>
             <div className="col-md-4">
               <h6 className="vision_header">Our Vision</h6>
               <p>
-                To provide quality and sustainable machines for industrial needs per client requirements. To provide work for those <br></br>who are 
+                To provide quality and sustainable machines for industrial needs per client requirements. <br></br>To provide work for those who are 
                 situated in sitio maagay barangay inarawan <br></br>as their livelihood source of income.
               </p>
             </div>

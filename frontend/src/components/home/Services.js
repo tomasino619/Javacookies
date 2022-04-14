@@ -6,6 +6,7 @@ import { servicesApi } from '../api/servicesApi'
 import { categoryActions } from '../../actions'
 import Footer from '../layout/Footer'
 import { product } from 'prelude-ls'
+import Metadata from "../layout/Metadata"
 
 const Services = () => {
     const [services, setServices] = useState([])
@@ -32,6 +33,7 @@ const Services = () => {
 
     return (
         <>
+        <Metadata title={"Services"} />
             <div className='product-col-container'>
                 {loading ? <h1>Loading ... </h1> : (
                     <>
