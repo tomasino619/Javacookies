@@ -55,7 +55,7 @@ const Login = () => {
                     <Card.Body>
                         <Card.Title>Login</Card.Title>
                         <Form onSubmit={submitHandler}>
-                            <Form.Group className="mb-3">
+                        <Form.Group className="mb-3">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="text" placeholder="Enter username" name="username" value={username} onChange={onChange} />
                                 <Form.Text className="text-muted">

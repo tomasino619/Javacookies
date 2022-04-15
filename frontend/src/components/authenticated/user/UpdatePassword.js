@@ -5,6 +5,8 @@ import { userActions, clearErrors } from '../../../actions'
 import { userConstants } from '../../../constants'
 import { useNavigate } from "react-router-dom"
 import Metadata from '../../layout/Metadata'
+import { Container, Form, Button, Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 
 const UpdatePassword = () => {
@@ -49,15 +51,34 @@ const UpdatePassword = () => {
     return (
         <body>
             <Metadata title={'Update Password'} />
+            <Container fluid style={{ paddingTop: '50px' }}>
+                <Card style={{ width: '25rem', margin: 'auto' }}>
+                    <Card.Body>
             <form onSubmit={submitHandler}>
-                <fieldset>
-                    <legend>Update Password</legend>
-                        <input type="password" name="oldPassword" value={oldPassword} onChange={e => setOldPassword(e.target.value)} placeholder="old password"/>
-                        <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="password"/>
-                        <input type="password" name="confirmPassword" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} placeholder="confirm password"/>
-                        <input type="submit" value="Submit" disabled={loading ? true : false} />
+                <fieldset >
+                        <Form.Group className="mb-3">
+                            <legend>Change Password</legend>
+                                <Form.Label>Old Password</Form.Label>
+                                <Form.Control type="password" name="oldPassword" value={oldPassword} onChange={e => setOldPassword(e.target.value)} placeholder="old password" />
+                            </Form.Group>
+                            <Form.Group className="mb-3">
+                                <Form.Label>New Password</Form.Label>
+                                <Form.Control type="password" name="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="password"/>
+                            </Form.Group>
+                            <Form.Group className="mb-3">
+                                <Form.Label>Confirm New Password</Form.Label>
+                                <Form.Control type="password" name="confirmPassword" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} placeholder="confirm password"/>
+                            </Form.Group>
+                            <Button type="submit" value="Submit" disabled={loading ? true : false} >
+                                Submit
+                            </Button>
+                            
                 </fieldset>
+                <Link to='/forgot-password'>Forgot password?</Link>
             </form>
+            </Card.Body>
+                </Card>
+            </Container>
         </body>
     )
 }
