@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { userActions, clearErrors } from '../../../actions'
 import { userConstants } from '../../../constants'
+import Metadata from '../../layout/Metadata'
 
 const ListUsers = () => {
     const dispatch = useDispatch()
@@ -41,6 +42,7 @@ const ListUsers = () => {
 
     return (
         <>
+            <Metadata title={'List Accounts'} />
             {loading ? <h1>Loading...</h1> : users ? (
                 <div className='tableAreaMain'>
                     <h1>All users</h1>

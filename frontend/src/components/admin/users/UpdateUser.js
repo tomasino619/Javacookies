@@ -72,7 +72,7 @@ const UpdateUser = () => {
 
     return (
         <>
-            <Metadata title={'Update User'} />
+            <Metadata title={'Update Account'} />
             {loading ? <h1>Loading</h1>
                 : <>
                     <form onSubmit={updateHandler}>

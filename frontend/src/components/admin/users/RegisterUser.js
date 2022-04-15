@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearErrors, userActions } from '../../../actions'
 import { userConstants } from '../../../constants'
+import Metadata from '../../layout/Metadata'
 
 const RegisterUser = () => {
     const dispatch = useDispatch()
@@ -51,6 +52,7 @@ const RegisterUser = () => {
 
     return (
         <>
+            <Metadata title={'Register Account'} />
             <Container style={{ width: '50%' }}>
                 <h1>Register Staff</h1>
                 <Form onSubmit={submitHandler}>
