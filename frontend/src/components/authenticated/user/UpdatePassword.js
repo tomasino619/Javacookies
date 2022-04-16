@@ -74,7 +74,7 @@ const UpdatePassword = () => {
                             </Button>
                             
                 </fieldset>
-                <Link to='/forgot-password'>Forgot password?</Link>
+                <Link class='lstyle'to='/forgot-password'>Forgot password? Click Here</Link>
             </form>
             </Card.Body>
                 </Card>

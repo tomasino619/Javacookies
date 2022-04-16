@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { userActions, clearErrors } from '../../../actions'
 import { userConstants } from '../../../constants'
 import Metadata from '../../layout/Metadata'
+import { Button, Form } from 'react-bootstrap';
+
 
 const UpdateUser = () => {
     const dispatch = useDispatch()
@@ -76,16 +78,29 @@ const UpdateUser = () => {
             {loading ? <h1>Loading</h1>
                 : <>
                     <form onSubmit={updateHandler}>
-                        <input type="email" value={email} name="email" onChange={onChange}/>
-                        <input type="text" value={username} name="username" onChange={onChange}/>
-                        
-                        <select name="role" value={role} onChange={onChange}>
-                            <option disabled>-</option>
-                            <option value={"Staff"}>Staff</option>
-                            <option value={"Admin"}>Admin</option>
-                        </select>
+                    <Form id='mrgn'>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="email" value={email} name="email" onChange={onChange}/>
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control type="text" value={username} name="username" onChange={onChange}/>
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Category</Form.Label>
+                                <Form.Select  name="role" value={role} onChange={onChange} required>
+                                    <option disabled>-</option>
+                                    <option value={"Staff"}>Staff</option>
+                                    <option value={"Admin"}>Admin</option>
+                                </Form.Select>
+                        </Form.Group>
                         {/* <input type="text" value={role} onChange={e => setRole(e.target.value)} name="role"/> */}
-                        <input type="submit" value="Submit" disabled={updateLoading ? true : false}/>
+
+                        <input class='updbtn' variant="primary" type="submit" value="Submit" disabled={updateLoading ? true : false}/>
+                        </Form>
                     </form>
                 </>}
         </>

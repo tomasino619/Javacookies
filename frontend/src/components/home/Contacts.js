@@ -19,7 +19,7 @@ const Contacts = () => {
                   <div class="card-body text-center">
                     <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
                     <h4 class="text-uppercase mb-5">phone</h4>
-                    <p><a href="tel:09958494580">+639958494580</a></p>
+                    <p><a class="lstyle" href="tel:09958494580">+639958494580</a></p>
                   </div>
                 </div>
              </div>
@@ -29,6 +29,7 @@ const Contacts = () => {
                     <i class="fab fa-facebook-f fa-5x mb-3" aria-hidden="true"></i>
                     <h4 class="text-uppercase mb-5">Facebook</h4>
                    <address><a
+                        class="lstyle"
                         href='https://www.facebook.com/rcpdfab'
                         target='_blank'
                         rel='noreferrer'
@@ -44,6 +45,7 @@ const Contacts = () => {
                     <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
                     <h4 class="text-uppercase mb-5">Address</h4>
                     <address class="add2"><a
+                        class="lstyle"
                         href='https://goo.gl/maps/x5JR7uoyZaKs5TkGA'
                         target='_blank'
                         rel='noreferrer'
@@ -58,7 +60,7 @@ const Contacts = () => {
                   <div class="card-body text-center">
                     <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
                     <h4 class="text-uppercase mb-5">email</h4>
-                    <p>< a href="mailto:rcpdfabtrading@gmail.com">rcpdfabtrading@gmail.com</a></p>
+                    <p>< a class="lstyle" href="mailto:rcpdfabtrading@gmail.com">rcpdfabtrading@gmail.com</a></p>
                   </div>
                 </div>
              </div>
