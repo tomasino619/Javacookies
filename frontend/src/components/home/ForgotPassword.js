@@ -74,7 +74,7 @@ const ForgotPassword = () => {
                             <Card style={{ maxWidth: '30rem', margin: '50px auto', backgroundColor: "#F5F5F5", borderTop: '7px solid #9c0b0b' }}>
                                 <Card.Body>
                                     <Card.Title style={{ margin: '50px 0 20px 0' }}>Forgot Password?</Card.Title>
-                                    <Card.Text style={{ fontSize: '12px' }}>Enter your registered UST GSuite email address. A reset password link will be sent to your inbox.</Card.Text>
+                                    <Card.Text style={{ fontSize: '12px' }}>Enter your registered email address. A reset password link will be sent to your inbox.</Card.Text>
                                     <Form onSubmit={submitHandler} encType='application/json' method='post'>
                                         <FloatingLabel label="Email address" className="mb-3">
                                             <Form.Control
