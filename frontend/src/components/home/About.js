@@ -79,81 +79,50 @@ const About = () => {
               <div class="faqcard">
                 <div class="card-body">
                   <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                  <p class="card-text">Answer here</p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
                   <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                  <p class="card-text">Answer here</p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
                   <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                  <p class="card-text">Answer here</p>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm">
+            {/* <div class="col-sm">
 
               <div class="faqcard">
                 <div class="card-body">
                   <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                  <p class="card-text">Answer here</p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
                   <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                  <p class="card-text">Answer here</p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
                   <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
+                  <p class="card-text"> Answer here</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div class="col-sm">
-
-              <div class="faqcard">
-                <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
-                </div>
-              </div>
-
-              <div class="faqcard">
-                <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
-                </div>
-              </div>
-
-              <div class="faqcard">
-                <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">let leni lead angat buhay rosa ang kulay n bukas at bukas at next years
-                    let leni lead angat buhay rosa ang kulay n bukas at bukas at next years</p>
-                </div>
-              </div>
-            </div>
+            
 
 
           </div>
