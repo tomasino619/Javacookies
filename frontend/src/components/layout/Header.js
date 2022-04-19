@@ -115,7 +115,7 @@ function Header() {
                                 </NavDropdown>
                             </>}
                     </> : <> {/** else, user is NOT logged in, display the login button */}
-                        {button && <Button buttonStyle='btn--primary'>LOGIN</Button>}
+                        {/**button && <Button buttonStyle='btn--primary'>LOGIN</Button>*/}
                     </>}
                 </div>
             </nav>

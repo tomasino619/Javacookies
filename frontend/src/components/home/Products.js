@@ -37,7 +37,7 @@ const Products = () => {
                 {loading ? <h1>Loading ... </h1> : (
                     <>
                         <div class="row" id="aboutheader">
-                            <h1>Products</h1>
+                            Products
                         </div>
 
                         <select name="category" id='category' onChange={e => setCategory(e.target.value)}>

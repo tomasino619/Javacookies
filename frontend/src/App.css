@@ -123,9 +123,11 @@ hr.solid {
 }
 
 #aboutheader {
-  margin-left: 45%;
+  align-self: center;
+  font-family: 'Bebas Neue';
+  letter-spacing: 4 px;
+  font-size: 100px;
   padding-top: 30px;
-  max-width: 10%;
 }
 
 #aboutdesc {

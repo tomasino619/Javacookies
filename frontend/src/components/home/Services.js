@@ -38,7 +38,7 @@ const Services = () => {
                 {loading ? <h1>Loading ... </h1> : (
                     <>
                         <div class="row" id="aboutheader">
-                            <h1>Services</h1>
+                            Services
                         </div>
 
                         <select name="category" id='category' onChange={e => setCategory(e.target.value)}>
