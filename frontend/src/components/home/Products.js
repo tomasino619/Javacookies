@@ -69,7 +69,7 @@ const Products = () => {
                                                         <p id='desc-limiter'>
                                                             {product.description}
                                                         </p>
-                                                    <p>
+                                                    <p id='desc-limiter'>
                                                         ₱{product.price}
                                                     </p>
                                                         <div id='card-button'>

@@ -63,8 +63,8 @@ const Services = () => {
                                                         <hr class="solid"></hr>
                                                     </div>
                                                     <p>{service.category}</p>
-                                                    <p>₱{service.price}</p>
                                                     <p id='desc-limiter'>{service.description}</p>
+                                                    <p id='desc-limiter'>₱{service.price}</p>
                                                     <div id='card-button'>
                                                         <Link to={`/services/${service._id}`}>
                                                             <button>View</button>
