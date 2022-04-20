@@ -78,49 +78,50 @@ const About = () => {
 
               <div class="faqcard">
                 <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">Answer here</p>
+                  <h5 class="card-title">How do I avail the products and services offered by RCPD?</h5>
+                  <p class="card-text">If you want to make an order for a specific product or avail our services, please get in touch with us by sending us an email or a message through our 
+                  <a href="/contacts"> Facebook page</a> . You may also contact us through the number provided in our <a href="/contacts">Contacts page.</a></p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">Answer here</p>
+                  <h5 class="card-title">What are the usual prices for the products and services? </h5>
+                  <p class="card-text">The price range for the products and services vary depending on the specifics and customizations needed by the client. For the price quotation, you may reach us through the given contacts details provided by the <a href="/contacts">Contacts page.</a> </p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">Answer here</p>
+                  <h5 class="card-title">Do you offer customized/ modified machines that will suit my company's/business' needs?</h5>
+                  <p class="card-text">RCPD specializes in custom-made machines and services that are designed to fit the client's solutions for their different problems</p>
                 </div>
               </div>
             </div>
 
-            {/* <div class="col-sm">
+             <div class="col-sm">
 
               <div class="faqcard">
                 <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">Answer here</p>
+                  <h5 class="card-title">How long do till I can get my order?</h5>
+                  <p class="card-text">It depends on the complexity of your order/machine and the given requirements. As well as the availability of some parts</p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text">Answer here</p>
+                  <h5 class="card-title">What are your mode of Payment?</h5>
+                  <p class="card-text">We accept bank transfer, cash on hand and Cheque. We require downpayments depending on your order</p>
                 </div>
               </div>
 
               <div class="faqcard">
                 <div class="card-body">
-                  <h5 class="card-title">Questions</h5>
-                  <p class="card-text"> Answer here</p>
+                  <h5 class="card-title">Do you have a warranty?</h5>
+                  <p class="card-text"> Yes. We do offer 1 year warranty and services</p>
                 </div>
               </div>
-            </div> */}
+            </div> 
 
             
 
