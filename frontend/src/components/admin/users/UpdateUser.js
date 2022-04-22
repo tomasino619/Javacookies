@@ -78,7 +78,10 @@ const UpdateUser = () => {
             {loading ? <h1>Loading</h1>
                 : <>
                     <form onSubmit={updateHandler}>
+                    
                     <Form id='mrgn'>
+                    <h1>Update User Info</h1>
+                    <br></br>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="email" value={email} name="email" onChange={onChange}/>

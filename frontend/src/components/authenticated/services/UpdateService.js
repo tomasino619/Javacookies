@@ -79,6 +79,8 @@ const UpdateService = () => {
         <Fragment>
             <Metadata title={"Update Service"} />
             <Form  id='mrgn' onSubmit={submitHandler}>
+                <h1>Update Service Info</h1>
+                <br></br>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" placeholder="Name" value={service.name} onChange={(e) => setService({...service, name: e.target.value})} required />
@@ -96,11 +98,6 @@ const UpdateService = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Price</Form.Label>
                     <Form.Control type="text" placeholder="Price" value={service.price} onChange={(e) => setService({...service, price: e.target.value})} required />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Category</Form.Label>
-                    <Form.Control type="text" placeholder="Category" value={service.category} onChange={(e) => setService({...service, category: e.target.value})} required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">

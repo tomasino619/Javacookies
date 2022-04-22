@@ -65,6 +65,8 @@ const CreateService = () => {
         <Fragment>
             <Metadata title={"Create Service"} />
             <Form  id='mrgn' onSubmit={submitHandler}>
+            <h1>Create Service</h1>
+            <br></br>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" placeholder="Name" value={service.name} onChange={(e) => setService({...service, name: e.target.value}) } required />

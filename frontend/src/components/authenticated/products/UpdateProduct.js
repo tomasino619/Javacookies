@@ -82,6 +82,8 @@ const UpdateProduct = () => {
         <Fragment>
             <Metadata title={"Update Product"} />
             <Form id='mrgn' onSubmit={submitHandler}>
+                <h1>Update Product Info</h1>
+                <br></br>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" placeholder="Name" value={product.name} onChange={(e) => setProduct({ ...product, name: e.target.value })} required />

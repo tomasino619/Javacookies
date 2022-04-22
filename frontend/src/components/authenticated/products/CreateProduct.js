@@ -63,8 +63,11 @@ const CreateProduct = () => {
     return (
         categoryList ?
         <Fragment>
+            
             <Metadata title={"Create Product"} />
             <Form id='mrgn' onSubmit={submitHandler}>
+            <h1>Create Product</h1>
+            <br></br>
                 <Form.Group className="mb-3" controlId="formBasicEmail"> 
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" placeholder="Name" value={product.name} onChange={(e) => setProduct({ ...product, name: e.target.value })} required />
