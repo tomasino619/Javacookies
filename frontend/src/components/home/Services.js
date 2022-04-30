@@ -36,7 +36,7 @@ const Services = () => {
 
   const [sortId, setSortId] = useState("");
 
-  sortList(sortId, services)
+  sortList(sortId, services);
 
   return (
     <>
@@ -82,8 +82,8 @@ const Services = () => {
               <option value="oldest">Date (Oldest)</option>
               <option value="a-z">Name (A-Z)</option>
               <option value="z-a">Name (Z-A)</option>
-              <option value="highest">Highest Price</option>
-              <option value="lowest">Lowest Price</option>
+              <option value="highest">Price (Highest)</option>
+              <option value="lowest">Price (Lowest)</option>
             </select>
 
             <div id="product-area">
