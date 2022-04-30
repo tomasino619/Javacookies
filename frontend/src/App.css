@@ -583,7 +583,7 @@ hr.solid {
 
 .table{
   border:solid;
-  width: 500px;
+  /* width: 500px; */
   align-items: center;
   margin: auto;
 }
