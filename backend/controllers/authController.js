@@ -204,6 +204,12 @@ exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
         date: Date.now()
     })
 
+    const audits = await Audit.find({ created_by: user.username })
+
+    for(var i = 0 ; i < audits.length ; i++) {
+        await audits[i].remove()
+    }
+
     await user.remove()
 
     res.status(200).json({

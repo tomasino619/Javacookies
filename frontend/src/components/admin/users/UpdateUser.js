@@ -99,7 +99,7 @@ const UpdateUser = () => {
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Username</Form.Label>
-                                <Form.Control type="text" value={username} name="username" onChange={onChange} required/>
+                                <Form.Control type="text" value={username} name="username" onChange={onChange} disabled/>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Category</Form.Label>
