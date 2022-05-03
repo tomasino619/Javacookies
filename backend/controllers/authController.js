@@ -51,7 +51,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
         // const message = await resetPassword({ link })
         await sendEmail({
             email: user.email,
-            subject: 'Java Cookies Password Recovery',
+            subject: 'RCPD Recovery Password',
             message: `<h1>Reset link: ${link}</h1>`
         })
 

@@ -15,13 +15,15 @@ const RegisterUser = () => {
     const { loading, error, isCreated } = useSelector(state => state.user)
 
     const [staff, setStaff] = useState({
+        first_name: "",
+        last_name: "",
         username: "",
         email: "",
         password: "",
         confirmPassword: "",
     })
 
-    const { username, email, password, confirmPassword } = staff
+    const { first_name, last_name, username, email, password, confirmPassword } = staff
 
     useEffect(() => {
         if (error) {
@@ -57,17 +59,25 @@ const RegisterUser = () => {
                 <h1>Register Staff</h1>
                 <Form onSubmit={submitHandler}>
                     <Form.Group className="mb-3">
+                        <Form.Label>First name</Form.Label>
+                        <Form.Control type="text" name="first_name" value={first_name} onChange={onChange} placeholder="Enter first name" required/>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Last name</Form.Label>
+                        <Form.Control type="text" name="last_name" value={last_name} onChange={onChange} placeholder="Enter last name" required/>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" name="email" value={email} onChange={onChange} placeholder="Enter email" />
+                        <Form.Control type="email" name="email" value={email} onChange={onChange} placeholder="Enter email" required/>
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Label>Username</Form.Label>
-                        <Form.Control type="text" name="username" value={username} onChange={onChange} placeholder="Enter username" />
+                        <Form.Control type="text" name="username" value={username} onChange={onChange} placeholder="Enter username" required/>
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" name="password" value={password} onChange={onChange} placeholder="Password" />
-                        <Form.Control type="password" name="confirmPassword" value={confirmPassword} onChange={onChange} placeholder="Confirm Password" />
+                        <Form.Control type="password" name="password" value={password} onChange={onChange} placeholder="Password" required/>
+                        <Form.Control type="password" name="confirmPassword" value={confirmPassword} onChange={onChange} placeholder="Confirm Password" required/>
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Register

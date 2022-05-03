@@ -48,7 +48,7 @@ const ListUsers = () => {
                     <h1>All users</h1>
                     <table className='tableMainUser'>
                         <thead id='tableHeader'>
-                            {/* <th>Name</th> */}
+                            <th>Name</th>
                             <th>Username</th>
                             <th>Role</th>
                             <th>Actions</th>
@@ -57,7 +57,7 @@ const ListUsers = () => {
                             {users && users.map(user => (
                                 <>
                                     <tr className='contentSpace'>
-                                        {/* <td>{user.first_name} {user.last_name}</td> */}
+                                        <td>{user.first_name} {user.last_name}</td>
                                         <td>{user.username}</td>
                                         <td>{user.role}</td>
                                         <td>
