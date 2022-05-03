@@ -33,6 +33,7 @@ const ListAudits = () => {
                             <th>Name</th>
                             <th>Description</th>
                             <th>Created By</th>
+                            <th>Status</th>
                         </thead>
                         <tbody align='center'>
                             {audits && audits.map(audit => (
@@ -42,6 +43,7 @@ const ListAudits = () => {
                                         <td>{audit.name}</td>
                                         <td>{audit.description}</td>
                                         <td>{audit.created_by}</td>
+                                        <td style={audit.status === 'Active' ? { color: 'green' } : { color: 'red' }}>{audit.status}</td>
                                     </tr>
                                 </>
                             ))}
